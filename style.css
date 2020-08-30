@@ -1,0 +1,271 @@
+
+/* body {
+    background-image: url(images/image-lion-background.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+     font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.125rem;
+} */
+
+
+html{
+    background-image: linear-gradient(#FC5E55, #FA4083);
+}
+body{
+    /* background-color:background-color: #F4D03F; */
+    /* background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%); */
+    background-image: url(images/image-lion-background.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    font-family: 'Roboto', sans-serif;
+    font-size : 1.125rem;
+    color:white;
+}
+.container{
+    width: 1024px;
+    min-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+header{
+
+    display: flex;
+    min-height: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left:20px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(248, 248, 248, 0.801);
+
+}
+nav{
+    display: flex;
+}
+main{
+    min-height: 300px;
+    display: flex;
+    /* align-items: center; */
+
+}
+
+.cards{
+    min-height: 300px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+
+}
+.cards1{
+    background-image: url(images/image-background-card1.jpg);
+    background-size: cover;
+    background-position:bottom;
+    width: 30%;
+}
+.cards2{
+    background-image: url(images/image-background-card2.jpg);
+    background-size: cover;
+    background-position:bottom;
+    width: 30%;
+}
+
+.cards3{
+    background-image: url(images/image-background-card3.jpg);
+    background-size: cover;
+    background-position:bottom;
+    width: 30%;
+}
+
+.herobox1{
+    /* text-align: start; */
+    flex: 2;
+    padding-right: 100px;
+
+}
+
+.herobox2{
+    padding-top: 1.85em;
+    flex: 1;
+}
+
+
+h1{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 1.25rem;
+    text-shadow: 1px 1px 3px #666666;
+    padding-top: 1.5rem;
+}
+
+p{
+    font-family: sans-serif;
+    line-height: 1.75rem;
+
+    /* margin-bottom: 0.25rem; */
+    font-family: 'Roboto Condensed', sans-serif;;
+    /* text-shadow: 1px 1px 3px #666666; */
+}
+
+.card1, .card2, .card3 {
+    padding: 30px 20px 20px 30px;
+    box-sizing: border-box;
+}
+h2 {
+    font-size: 2.25rem;
+    font-family: 'Playfair Display', serif;
+    margin-top: 20px;
+}
+
+
+.cards p {
+    line-height: 1.25rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.iconincards{
+    padding-top: 15px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.mybutton {
+    background-color: white;
+    color: #FA4083;
+    font-family: 'Playfair Display', serif;
+    padding: 11px 25px;
+    border-radius: 2px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.228);
+    display: inline-block;
+    margin-top: 20px;
+    /* margin-left: 2px; */
+}
+
+/* starting worling with nav section */
+.navbutton{
+    border: 1px solid white;
+    padding: 11px 25px;
+    margin-left:5px;
+    display: inline-block;
+    position: relative;
+
+}
+
+.navbutton a{
+    text-decoration: none;
+}
+.dropdown-box{
+    display: none;
+    position: absolute;
+    margin-left: -25px;
+    padding-top: 10px;
+}
+
+/* This turns the drop down on when hovering*/
+
+.navbutton:hover .dropdown-box{
+    display: block;
+}
+
+/*  changing the color of the dropdpwnbox  */
+.dropdown-box .navbutton{
+    background-color: #FC5E55;
+    width: 98px;
+    margin-left: -1.8px;
+}
+/*  changing the color of the dropdpwnbox when hovering */
+.dropdown-box .navbutton:hover{
+    background-color: rgba(0, 0, 0, 0.534);
+}
+
+/* other nav button color when hovering */
+.navbutton:hover{
+    background-color:rgba(0, 0, 0, 0.534)
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    line-height: 1.8rem;
+}
+
+.tbox {
+    width: 47%;
+    padding: 50px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.mybutton:hover{
+    background-color: lightblue;
+    transition-duration: .5s;
+}
+
+.tbox :last-child{
+    font-size: 0.8rem;
+    padding-left: 25px;
+}
+
+/* .tbox p:last-of-type{
+    font-size: 0.8rem;
+    padding-left: 25px;
+} */
+
+
+/*  for contact info page */
+
+section{
+    min-height: 300px;
+}
+
+
+form{
+    margin: 40px 0px;
+}
+.inputwrapper{
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+}
+
+input[type=text],input[type=email],textarea{
+    padding: 12px 20px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    box-sizing: border-box;
+}
+
+
+input[type=radio] {
+    margin-right: 15px;
+}
+
+.newline{
+    display: block;
+    margin-bottom: 20px;
+}
+
+section p{
+    font-family: sans-serif;
+}
+
+
+input[type=submit]{
+    padding:11px 25px;
+    color: darkred;
+    font-size: 15px;
+}
+input[type=submit]:hover{
+    background-color:rgb(22, 17, 17)
+}

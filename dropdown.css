@@ -1,0 +1,37 @@
+.navbutton {
+    background-color: rgba(120, 2, 231, 0.246);
+    text-decoration: none;
+    padding: 11px 25px;
+    color: black;
+    display: inline-block;
+    position: relative;
+
+}
+
+ .navbutton a{
+    text-decoration: none;
+}
+
+/* This turns the drop down off*/
+.dropdown-box{
+    display: none;
+    position: absolute;
+    margin-left: -25px;
+    padding-top: 10px;
+}
+
+/* This turns the drop down on when hovering*/
+
+.navbutton:hover .dropdown-box{
+    display: block;
+}
+
+/*  changing the color of the dropdpwnbox  */
+.dropdown-box .navbutton{
+    background-color: cadetblue;
+}
+
+/*  changing the color of the dropdpwnbox when hovering */
+.dropdown-box .navbutton:hover{
+    background-color: rgb(100, 110, 9);
+}
